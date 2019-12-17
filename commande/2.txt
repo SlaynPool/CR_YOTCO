@@ -1,0 +1,6 @@
+[slaynpool@MiniZbeub]commande$ locale -a
+C
+en_US.utf8
+fr_FR.utf8
+POSIX
+

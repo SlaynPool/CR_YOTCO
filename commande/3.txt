@@ -1,0 +1,85 @@
+#~$ git clone git://git.yoctoproject.org/poky
+Clonage dans 'poky'...
+remote: Counting objects: 461422, done.
+remote: Compressing objects: 100% (108855/108855), done.
+remote: Total 461422 (delta 345364), reused 461219 (delta 345161)
+Reception dobjets: 100% (461422/461422), 160.14 Mio | 264.00 Kio/s, fait.
+Resolution des deltas: 100% (345364/345364), fait.
+#~$ cd poky/
+#poky$ mv ../meta-raspberrypi/ .
+#poky$ source oe-init-build-env rpi-build
+You had no conf/local.conf file. This configuration file has therefore been
+created for you with some default values. You may wish to edit it to, for
+example, select a different MACHINE (target hardware). See conf/local.conf
+for more information as common configuration options are commented.
+
+You had no conf/bblayers.conf file. This configuration file has therefore been
+created for you with some default values. To add additional metadata layers
+into your configuration please add entries to conf/bblayers.conf.
+
+The Yocto Project has extensive documentation about OE including a reference
+manual which can be found at:
+    http://yoctoproject.org/documentation
+
+For more information about OpenEmbedded see their website:
+    http://www.openembedded.org/
+
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+
+Other commonly useful commands are:
+ - 'devtool' and 'recipetool' handle common recipe tasks
+ - 'bitbake-layers' handles common layer tasks
+ - 'oe-pkgdata-util' handles common target package tasks
+#rpi-build$ bitbake-layers add-layer ../meta-raspberrypi
+NOTE: Starting bitbake server...
+
+#rpi-build$ echo 'MACHINE="raspberrypi3"' >> conf/local.conf
+#time bitbake core-image-minimal
+WARNING: Host distribution "manjaro" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution.
+Parsing recipes: 100% |########################################################| Time: 0:00:31
+Parsing of 798 .bb files complete (0 cached, 798 parsed). 1327 targets, 67 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.44.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "manjaro"
+TARGET_SYS           = "arm-poky-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "poky"
+DISTRO_VERSION       = "3.0"
+TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            
+meta-yocto-bsp       = "master:7e7b066085c2496a259b356c59acda32d444a261"
+meta-raspberrypi     = "master:3ae288aa38e3a1609c6e861918a874416d3f0f13"
+
+NOTE: Fetching uninative binary shim from http://downloads.yoctoproject.org/releases/uninative/2.7/x86_64-nativesdk-libc.tar.xz;sha256sum=9498d8bba047499999a7310ac2576d0796461184965351a56f6d32c888a1f216
+Initialising tasks: 100% |#####################################################| Time: 0:00:01
+Sstate summary: Wanted 1016 Found 0 Missed 1016 Current 0 (0% match, 0% complete)
+NOTE: Executing Tasks
+NOTE: Setscene tasks completed
+Currently  8 running tasks (291 of 2777)  10% |####                                          |
+Currently  8 running tasks (293 of 2777)  10% |####                                          |
+Currently  8 running tasks (296 of 2777)  10% |####                                          |
+Currently  8 running tasks (299 of 2777)  10% |####                                          |
+Currently  8 running tasks (303 of 2777)  10% |#####                                         |
+Currently  8 running tasks (306 of 2777)  10% |#####                                         |
+0: binutils-cross-arm-2.33.1-r0 do_fetch (pid 3303)   4% |#                           | 106K/s
+Currently  8 running tasks (322 of 2777)  11% |#####                                         |
+0: binutils-cross-arm-2.33.1-r0 do_fetch (pid 3303)   5% |#                          | 94.8K/s
+Currently  8 running tasks (775 of 2777)  27% |############                                  |
+0: binutils-cross-arm-2.33.1-r0 do_fetch (pid 3303)  14% |###                        | 42.4K/s
+

@@ -1,0 +1,45 @@
+
+# sudo pacman -S git diffstat unzip texinfo python chrpath wget xterm sdl rpcsvc-proto socat cpio inetutils
+avertissement: git-2.24.0-1 est   jour -- reinstallation
+avertissement: unzip-6.0-13 est   jour -- reinstallation
+avertissement: texinfo-6.7-1 est   jour -- reinstallation
+avertissement: python-3.7.4-2 est   jour -- reinstallation
+avertissement: wget-1.20.3-2 est   jour -- reinstallation
+avertissement: xterm-350-1 est   jour -- reinstallation
+avertissement: sdl-1.2.15-13 est   jour -- reinstallation
+avertissement: inetutils-1.9.4-7 est   jour -- reinstallation
+resolution des dependances?
+recherche des conflits entre paquets?
+
+Paquets (13) chrpath-0.16-2  cpio-2.13-1  diffstat-1.62-1  git-2.24.0-1  inetutils-1.9.4-7  python-3.7.4-2  rpcsvc-proto-1.4-1  sdl-1.2.15-13  socat-1.7.3.3-1  texinfo-6.7-1  unzip-6.0-13
+             wget-1.20.3-2  xterm-350-1
+
+Taille totale du telechargement:    0,47 MiB
+Taille totale installee:        198,12 MiB
+Taille de mise   jour nette:      1,85 MiB
+
+:: Proceder   linstallation ? [O/n] 
+:: Recuperation des paquets
+ rpcsvc-proto-1.4-1-x86_64                                                              60,4 KiB   487 KiB/s 00:00 [--------------------------------------------------------------------] 100%
+ socat-1.7.3.3-1-x86_64                                                                169,6 KiB  1238 KiB/s 00:00 [--------------------------------------------------------------------] 100%
+ cpio-2.13-1-x86_64                                                                    199,5 KiB  2,16 MiB/s 00:00 [--------------------------------------------------------------------] 100%
+ diffstat-1.62-1-x86_64                                                                 25,0 KiB  8,13 MiB/s 00:00 [--------------------------------------------------------------------] 100%
+ chrpath-0.16-2-x86_64                                                                  23,5 KiB  0,00   B/s 00:00 [--------------------------------------------------------------------] 100%
+(13/13) verification des cles dans le trousseau                                                                    [--------------------------------------------------------------------] 100%
+(13/13) verification de l?integrite des paquets                                                                    [--------------------------------------------------------------------] 100%
+(13/13) chargement des fichiers des paquets                                                                        [--------------------------------------------------------------------] 100%
+(13/13) analyse des conflits entre fichiers                                                                        [--------------------------------------------------------------------] 100%
+(13/13) verification de l?espace disque disponible                                                                 [--------------------------------------------------------------------] 100%
+:: Traitement des changements du paquet?
+( 1/13) reinstallation git                                                                                         [--------------------------------------------------------------------] 100%
+( 2/13) installation de diffstat                                                                                   [--------------------------------------------------------------------] 100%
+( 3/13) reinstallation unzip                                                                                       [--------------------------------------------------------------------] 100%
+( 4/13) reinstallation texinfo                                                                                     [--------------------------------------------------------------------] 100%
+( 5/13) reinstallation python                                                                                      [--------------------------------------------------------------------] 100%
+( 6/13) installation de chrpath                                                                                    [--------------------------------------------------------------------] 100%
+( 7/13) reinstallation wget                                                                                        [--------------------------------------------------------------------] 100%
+( 8/13) reinstallation xterm                                                                                       [--------------------------------------------------------------------] 100%
+( 9/13) reinstallation sdl                                                                                         [--------------------------------------------------------------------] 100%
+(10/13) installation de rpcsvc-proto                                                                               [--------------------------------------------------------------------] 100%
+(11/13) installation de socat                                                                                      [--------------------------------------------------------------------] 100%
+(12/13) installation de cpio    
