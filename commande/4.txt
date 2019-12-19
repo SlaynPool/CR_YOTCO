@@ -1,0 +1,15 @@
+Currently  8 running tasks (2216 of 2777)  79% |################################################################################################################                             |
+0: linux-raspberrypi-1_4.19.81+gitAUTOINC+eef78b714c-r0 do_fetch (pid 27144)  78% |##################################################################################                        |
+1: elfutils-0.177-r0 do_compile - 2m46s (pid 9021)
+2: perl-5.30.1-r0 do_configure - 37s (pid 23227)
+3: gmp-6.1.2-r0 do_configure - 30s (pid 28651)
+Currently  1 running tasks (2701 of 2777)  97% |#########################################################################################################################################   NOTE: Tasks Summary: Attempted 2777 tasks of which 1 didn't need to be rerun and all succeeded.
+
+Summary: There were 3 WARNING messages shown.
+[2]+  Fini                    firefox TP2.pdf  (wd : ~/Documents/IDO/SEOC3/TP2)
+(maintenant, wd : ~/Documents/IDO/SEOC3/TP2/poky/rpi-build)
+
+real	104m25,320s
+user	8m14,546s
+sys	1m14,001s
+

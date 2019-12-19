@@ -1,0 +1,39 @@
+# cd rpi-build/
+# echo 'INHERIT+="rm_work"' >> conf/local.conf
+# echo 'hostname_pn-base-files="yocto-XX"' >> conf/local.conf
+# time bitbake core-image-minimal
+Parsing recipes: 100% |########################################################################################################################################################| Time: 0:00:30
+Parsing of 798 .bb files complete (0 cached, 798 parsed). 1327 targets, 67 skipped, 0 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.44.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "arm-poky-linux-gnueabi"
+MACHINE              = "raspberrypi3"
+DISTRO               = "poky"
+DISTRO_VERSION       = "3.0"
+TUNE_FEATURES        = "arm vfp cortexa7 neon vfpv4 thumb callconvention-hard"
+TARGET_FPU           = "hard"
+meta                 
+meta-poky            
+meta-yocto-bsp       = "master:6bb4a252199cfd5d44ad7ab6fc4118c80a1aae92"
+meta-raspberrypi     = "master:3ae288aa38e3a1609c6e861918a874416d3f0f13"
+
+Initialising tasks: 100% |#####################################################################################################################################################| Time: 0:00:02
+Sstate summary: Wanted 7 Found 0 Missed 7 Current 1009 (0% match, 99% complete)
+NOTE: Executing Tasks
+NOTE: Setscene tasks completed
+NOTE: Task /home/slaynpool/Documents/IDO/SEOC3/TP2/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_populate_sysroot unihash changed to 0ef4804ae671527a824f9411460c6438cb15db45476e15054f8759c382fbafbc
+NOTE: Task /home/slaynpool/Documents/IDO/SEOC3/TP2/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_package_qa unihash changed to 219bd4123aa1622fa40da4e61dde9b582dc4965868bcd5b3a1c307b6e6fdd2f5
+NOTE: Setscene tasks completed
+Currently  1 running tasks (3187 of 3196)  99% |############################################################################################################################################ |
+0: core-image-minimal-1.0-r0 do_rootfs (pid 13719)  13% |#################                                                  NOTE: Tasks Summary: Attempted 3196 tasks of which 2554 didn't need to be rerun and all succeeded.
+
+Summary: There was 1 WARNING message shown.
+
+real	1m41,596s
+user	0m1,342s
+sys	0m0,187s
+
